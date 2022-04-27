@@ -1,0 +1,355 @@
+*{
+    font-family: Varela;
+    
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    height: 60%;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    min-width: 343px;
+}
+article{
+width: 100%;
+height: auto;
+margin-top: 10px;
+}
+footer{
+    
+    width: 100%;
+    border-top: .5px solid grey;
+    display: flex;
+    min-width: 343px;
+}
+/*--------------- NUMERO 1 (INVITADO Y SHOP)-----------*/
+.top{
+    width: 100%;
+    border: 1px solid red;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    margin-top: 10px;
+    font-size: 16px;
+}
+.top__guess{
+border: 0.5px solid black;
+height: 30px;
+width: 120px;
+font-weight: 600;
+font-size: 15px;
+text-align: center;
+
+}
+.top__guess i{
+    margin-left: 10px;
+    transform: rotate(180deg);
+}
+.top__iconShop{
+    border: 0.5px solid black;
+    height: 30px;
+    position: absolute;
+    left: calc(100% - 40px)
+}
+.top__iconShop img{
+    width: 23.5px;
+    height: 23.5px;
+    cursor: pointer;
+}
+.top__second{
+    width: calc(100% - 5px) ;
+    
+    height: 192px;
+    border: 0.5px solid black;
+    margin-left: 5px;
+}
+
+/*--------------- NUMERO 2 (LOGO Y CIFRAS)-----------*/
+
+
+.top__second-logo{
+    width: 100%;
+    height: 96px;
+    border: 0.5px solid red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.top__second-logoImg{
+    width: 96px;
+height: 96px;
+border: 0.5px solid green;
+min-width: 96px;
+position: relative;
+left:calc(-50% + 170px);
+background-color: #FCB3BD;
+border-radius: 50%;
+border: 1.5px solid #EF5DA8;
+
+}
+.top__second-logoLosTres{
+    width: 243px;
+    height: 70px;
+    border: 0.5px solid green;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-left:5px;
+    justify-content: space-evenly;
+    margin-left: 5px;
+   
+}
+.lostres{
+
+    height: 25px;
+    width: 60px;
+    border: 0.5px solid blue;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+}
+.abajo{
+
+flex-grow: 1;
+}
+.envolver{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 0.5px solid green;
+    justify-content: space-evenly;
+   
+}
+.envolver2{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 0.5px solid green;
+    justify-content: space-evenly;
+}
+.top__second-logoB{
+    width: 80px;
+}
+
+
+/*--------------- NUMERO 3 (TITULO Y DESC)-----------*/
+
+.top__second-names{
+margin-top: 10px;
+border: .5px solid #EF5DA8;
+height: 80px;
+}
+.top__second-namesName{
+ border: .5px solid green;
+ display: flex;   
+ flex-direction: row;
+ height: 30px;
+}
+.top__second-namesNameTsoons{
+   border: .5px solid red; 
+   background: conic-gradient(from 163.54deg at 48.75% 6.95%, #9F2BFB 0deg, #6DF4F4 148.13deg, #F2EBAB 238.12deg, #FF5EEF 360deg);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 100%;
+}
+.top__second-namesNameButterfly{
+   border: .5px solid red; 
+   margin-left: 10px;
+   width: 25px;
+
+
+}
+.top__second-namesNameButterfly img{
+
+   object-fit: contain;
+   width: 100%;
+
+}
+.top__second-namesDescription{
+     border: .5px solid blue;
+     display: flex;
+     flex-direction: column;
+
+}
+.top__second-namesDescriptionOne{
+    display: flex;
+    flex-direction: row;
+    font-style: normal;
+}
+.top__second-namesDescriptionOne img{
+    width: 25px;
+    object-fit: scale-down;
+}
+.top__second-namesDescriptionOne p{
+    padding-top: 5px;
+    font-weight: 600;
+font-size: 15px;
+line-height: 17px;
+}
+.top__second-namesDescriptionTwo{
+    display: flex;
+    flex-direction: row;
+}
+.top__second-namesDescriptionTwo img{
+    width: 25px;
+    object-fit: scale-down;
+}
+.top__second-namesDescriptionTwo p{
+
+    padding-top: 5px;
+    font-weight: 600;
+font-size: 15px;
+line-height: 17px;
+}
+
+/*--------------- NUMERO 4 (BOTON Y MENU)-----------*/
+
+.top__third{
+    border: 0.5px solid red;
+    width: calc(100% - 5px);
+    height: auto;
+    margin-left: 5px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.top__third-button button{
+    margin-top: 10px;
+    border: 1px solid #EF5DA8;
+    box-sizing: border-box;
+    border-radius: 70px;
+    width: 152px;
+    height: 29px;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+letter-spacing: -0.1px;
+}
+.top__third-button i{
+    margin-left: 10px;
+    transform: rotate(180deg);
+}
+.top__menu{
+    border: 1px solid green;
+    flex-grow: 1;
+
+    width: calc(100% - 5px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.menu{
+
+    width: 70px;
+    height: 83px;
+    border: 0.5px dashed black;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: -0.01px;
+    font-weight: 600;
+}
+.Circle{
+    width: 70px;
+    height: 83px;
+    border-radius: 50%;
+    border: 1.5px solid #EF5DA8;
+}
+
+/*--------------- NUMERO 5 (SWITCH Y CATALOGO)-----------*/
+.article__grid-menu{
+    width: 100%;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    border: .5px solid green;
+}
+.menusgrid{
+    border: .5px dashed black;
+    flex-grow: 1;
+    width: 186px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.article__grid-menuRopaIMG{
+border: 1px solid rgba(60, 60, 67, 0.18);
+border-radius: 6px;
+}
+
+
+.article__grid{
+    display: grid;
+    padding-left:4px;
+    margin-bottom: 45px;
+    grid-template-columns: repeat(auto-fit,
+        minmax(120px,
+         1fr
+        )
+      );
+    
+}
+.article__grid-img{
+    border: .5px solid black;
+    width: 120px;
+    min-width: 120px;
+    height: 120px;
+    min-height: 120px;
+}
+
+/*--------------- NUMERO 6 (FOOTER MENU IG)-----------*/
+
+
+
+.footer__menu{
+    position: fixed;
+    bottom: 0;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 44px;
+    background-color: white;
+
+}
+.foot{
+    flex-grow: 1;
+    width: 30px;
+    height: 30px;
+    /*border: .5px dashed black;*/
+    text-align: center;
+
+}
+.footer__menu-meCircle{
+width: 28px;
+height: 23.45px;
+border: 2px solid #EF5DA8;
+border-radius: 50%;
+margin: 0 auto;
+
+}
+.footer__menu-me{
+
+}
