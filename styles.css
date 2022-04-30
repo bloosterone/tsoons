@@ -1,6 +1,7 @@
 *{
     font-family: Varela;
     
+    
 }
 body{
     display: flex;
@@ -24,14 +25,15 @@ footer{
     
     width: 100%;
     border-top: .5px solid grey;
+
     display: flex;
     min-width: 343px;
 }
 /*--------------- NUMERO 1 (INVITADO Y SHOP)-----------*/
 .top{
     width: 100%;
-    border: 1px solid red;
-    height: 50px;
+/*    border: 1px solid red;
+*/    height: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -40,7 +42,8 @@ footer{
     font-size: 16px;
 }
 .top__guess{
-border: 0.5px solid black;
+/*border: 0.5px solid black;
+*/
 height: 30px;
 width: 120px;
 font-weight: 600;
@@ -53,8 +56,8 @@ text-align: center;
     transform: rotate(180deg);
 }
 .top__iconShop{
-    border: 0.5px solid black;
-    height: 30px;
+/*    border: 0.5px solid black;
+*/    height: 30px;
     position: absolute;
     left: calc(100% - 40px)
 }
@@ -67,8 +70,8 @@ text-align: center;
     width: calc(100% - 5px) ;
     
     height: 192px;
-    border: 0.5px solid black;
-    margin-left: 5px;
+/*    border: 0.5px solid black;
+*/    margin-left: 5px;
 }
 
 /*--------------- NUMERO 2 (LOGO Y CIFRAS)-----------*/
@@ -77,8 +80,8 @@ text-align: center;
 .top__second-logo{
     width: 100%;
     height: 96px;
-    border: 0.5px solid red;
-    display: flex;
+/*    border: 0.5px solid red;
+*/    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -98,8 +101,8 @@ border: 1.5px solid #EF5DA8;
 .top__second-logoLosTres{
     width: 243px;
     height: 70px;
-    border: 0.5px solid green;
-    margin-left: 10px;
+/*    border: 0.5px solid green;
+*/    margin-left: 10px;
     display: flex;
     flex-direction: column;
     padding-left:5px;
@@ -111,8 +114,8 @@ border: 1.5px solid #EF5DA8;
 
     height: 25px;
     width: 60px;
-    border: 0.5px solid blue;
-    font-size: 14px;
+/*    border: 0.5px solid blue;
+*/    font-size: 14px;
     text-align: center;
     font-weight: 600;
 }
@@ -125,8 +128,8 @@ flex-grow: 1;
     width: 100%;
     display: flex;
     flex-direction: row;
-    border: 0.5px solid green;
-    justify-content: space-evenly;
+/*    border: 0.5px solid green;
+*/    justify-content: space-evenly;
    
 }
 .envolver2{
@@ -134,8 +137,8 @@ flex-grow: 1;
     width: 100%;
     display: flex;
     flex-direction: row;
-    border: 0.5px solid green;
-    justify-content: space-evenly;
+/*    border: 0.5px solid green;
+*/    justify-content: space-evenly;
 }
 .top__second-logoB{
     width: 80px;
@@ -146,18 +149,18 @@ flex-grow: 1;
 
 .top__second-names{
 margin-top: 10px;
-border: .5px solid #EF5DA8;
-height: 80px;
+/*border: .5px solid #EF5DA8;
+*/height: 80px;
 }
 .top__second-namesName{
- border: .5px solid green;
- display: flex;   
+/* border: .5px solid green;
+*/ display: flex;   
  flex-direction: row;
  height: 30px;
 }
 .top__second-namesNameTsoons{
-   border: .5px solid red; 
-   background: conic-gradient(from 163.54deg at 48.75% 6.95%, #9F2BFB 0deg, #6DF4F4 148.13deg, #F2EBAB 238.12deg, #FF5EEF 360deg);
+/*   border: .5px solid red; 
+*/   background: conic-gradient(from 163.54deg at 48.75% 6.95%, #9F2BFB 0deg, #6DF4F4 148.13deg, #F2EBAB 238.12deg, #FF5EEF 360deg);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 background-clip: text;
@@ -168,8 +171,8 @@ font-size: 22px;
 line-height: 100%;
 }
 .top__second-namesNameButterfly{
-   border: .5px solid red; 
-   margin-left: 10px;
+/*   border: .5px solid red; 
+*/   margin-left: 10px;
    width: 25px;
 
 
@@ -181,8 +184,8 @@ line-height: 100%;
 
 }
 .top__second-namesDescription{
-     border: .5px solid blue;
-     display: flex;
+/*     border: .5px solid blue;
+*/     display: flex;
      flex-direction: column;
 
 }
@@ -220,8 +223,8 @@ line-height: 17px;
 /*--------------- NUMERO 4 (BOTON Y MENU)-----------*/
 
 .top__third{
-    border: 0.5px solid red;
-    width: calc(100% - 5px);
+/*    border: 0.5px solid red;
+*/    width: calc(100% - 5px);
     height: auto;
     margin-left: 5px;
     flex-grow: 1;
@@ -247,8 +250,8 @@ letter-spacing: -0.1px;
     transform: rotate(180deg);
 }
 .top__menu{
-    border: 1px solid green;
-    flex-grow: 1;
+/*    border: 1px solid green;
+*/    flex-grow: 1;
 
     width: calc(100% - 5px);
     display: flex;
@@ -259,8 +262,8 @@ letter-spacing: -0.1px;
 
     width: 70px;
     height: 83px;
-    border: 0.5px dashed black;
-    margin-top: 15px;
+/*    border: 0.5px dashed black;
+*/    margin-top: 15px;
     display: flex;
     flex-direction: column;
     font-size: 12px;
@@ -282,11 +285,11 @@ letter-spacing: -0.1px;
     height: 44px;
     display: flex;
     flex-direction: row;
-    border: .5px solid green;
+    border: .5px solid grey;
 }
 .menusgrid{
-    border: .5px dashed black;
-    flex-grow: 1;
+/*   border: .5px dashed black;
+*/   flex-grow: 1;
     width: 186px;
     height: 44px;
     display: flex;
@@ -298,7 +301,9 @@ border: 1px solid rgba(60, 60, 67, 0.18);
 border-radius: 6px;
 }
 
-
+.article__grid-menuPeinados{
+    border-left: .5px solid grey;
+}
 .article__grid{
     display: grid;
     padding-left:4px;
@@ -311,11 +316,12 @@ border-radius: 6px;
     
 }
 .article__grid-img{
-    border: .5px solid black;
-    width: 120px;
+/*    border: .5px solid black;
+*/    width: 120px;
     min-width: 120px;
     height: 120px;
     min-height: 120px;
+    margin-top: .5px;
 }
 
 /*--------------- NUMERO 6 (FOOTER MENU IG)-----------*/
@@ -325,7 +331,7 @@ border-radius: 6px;
 .footer__menu{
     position: fixed;
     bottom: 0;
-    border: 1px solid black;
+    border-top: .5px solid grey;
     display: flex;
     flex-direction: row;
     align-items: center;
