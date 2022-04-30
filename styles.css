@@ -308,12 +308,20 @@ border-radius: 6px;
 .article__grid{
 
     min-width: 330px;
+    width: 100%;
     display: grid;
     padding-left:4px;
-    margin-bottom: 45px;
+    margin-bottom: 25px;
+    
     grid-template-columns: repeat(3,
-        minmax(136px,1fr)
+        minmax(100px,1fr)
       );
+
+    justify-content: space-evenly;
+    
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-auto-flow: dense;
     
     
    
@@ -323,15 +331,17 @@ border-radius: 6px;
 */  
   
    
-    min-width: 136px;
+    min-width: 100px;
     max-width: 400px;
     max-height: 400px;
-    min-height: 136px;
+    min-height: 100px;
     margin-top: .5px;
 }
+.article__grid-img:hover{
+
+}
 .article__grid-img img{
-    width: 400px;
-    width: 400px;
+  
 }
 
 /*--------------- NUMERO 6 (FOOTER MENU IG)-----------*/
