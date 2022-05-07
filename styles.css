@@ -307,14 +307,14 @@ border-radius: 6px;
     border-left: .5px solid grey;
 }
 .article__grid{
-
+     max-width: 800px;
+    max-height: 800px;
     min-width: 330px;
-    width: 100%;
     display: grid;
     padding-left:05px;
     grid-gap: 5px;
-    margin-bottom: 40px;
     
+    margin: 0 auto 40px;
     grid-template-columns: repeat(3,
         minmax(100px,1fr)
       );
