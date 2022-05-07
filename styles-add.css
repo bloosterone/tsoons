@@ -6,21 +6,31 @@
 body{
     display: flex;
     flex-direction: column;
+     min-width: 330px;
 }
 
 header{
-    height: 60%;
+    height: 68px;
     width: 100%;
-     border-top: .5px solid red;
+     border-bottom: 0.5px solid #808080;
     display: flex;
     flex-direction: column;
-    min-width: 343px;
+   
+    justify-content: center;
 }
-article{
+section{
 width: 100%;
 height: auto;
 margin: 10px auto;
- border-top: .5px solid grey;
+ 
+
+}
+.article__menu{
+    width: 100%;
+height: 98;
+margin: 0px auto;
+ border-bottom: .5px solid #808080;
+ padding-bottom: 10px;
 
 }
 footer{
@@ -34,35 +44,49 @@ footer{
 /*--------------- NUMERO 1 (FOTO Y BUSCADOR)-----------*/
 .top{
     width: 100%;
-    border: 1px solid red;
+    
    height: 50px;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     margin-top: 10px;
     font-size: 16px;
+    justify-content: center;
 }
 .top__icon-camera{
     border: .5px dashed black;
     width: 40px;
-    margin-left: 40px;
+    margin-left: 25px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+}
+.top__icon-camera img{
+    width: 24px;
+  height: 24px;
 }
 .top__search{
-    width: 240px;
+    width: 60%;
     border: .5px dashed black;
     margin: 0 auto;
     background: rgba(118, 118, 128, 0.12);
     border-radius: 98px;
+    display: flex;
+    max-width: 400px;
+    flex-direction: row;
 
     
 }
 .top__search img{
   margin: 3px 3px;
-}
-.top__search input{
-    border: .5px dashed red;
-    margin-left: 20px;
 
+}
+
+.top__search input{
+   
+    margin-left: 20px;
+    background: transparent;
     text-align: center;
     border: none;
     width: 70%;
@@ -71,4 +95,135 @@ footer{
 }
 .top__search input:focus{
  outline: transparent;
+}
+
+/* ---------------------HISTORIAS-----------*/
+
+.top__menu{
+/*    border: 1px solid green;
+*/    flex-grow: 1;
+
+    width: calc(100% - 5px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.menu{
+
+    width: 70px;
+    height: 83px;
+/*    border: 0.5px dashed black;
+*/    
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: -0.01px;
+    font-weight: 600;
+    align-content: center;
+    justify-content: center;
+}
+.Circle{
+    width: 70px;
+    height: 83px;
+    border-radius: 50%;
+    border: 1.5px solid #EF5DA8;
+}
+
+/* ---------GALERIA CLIENTAS---------*/
+
+.article__grid{
+
+    min-width: 330px;
+    width: 100%;
+    display: grid;
+    padding-left:05px;
+    grid-gap: 5px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    grid-template-columns: repeat(3, minmax(100px,1fr));
+    
+
+    justify-content: space-evenly;
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    border-radius: 20px;
+}
+.article__grid-img{
+/*    border: .5px solid black;
+*/  
+    background-color: gray;
+ border-radius: 20px;
+   margin-left:5px ;
+   margin-right: 5px;
+    min-width: 100px;
+  
+    min-height: 100px;
+    margin-top: .5px;
+    transition-property: transform;
+    transition-duration: 300ms;
+    overflow: hidden;
+    text-align: center;
+}
+
+.article__grid-img:nth-child(12n+2){
+    
+       grid-column-end:span 2;
+    grid-row-end:span 2;
+}
+.article__grid-img:nth-child(12n+7){
+    grid-row-start: span 2;
+    grid-column-start: span 2;
+}
+
+
+.article__grid-img:hover{
+box-shadow: 1px 1px 2px 2px #EF5DA8;
+transform:  scale(1.04);
+ 
+
+
+}
+.article__grid-img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/*------FOOTER MENU------*/
+
+.footer__menu{
+    position: fixed;
+    bottom: 0;
+    border-top: .5px solid grey;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 44px;
+    background-color: white;
+
+}
+.foot{
+    flex-grow: 1;
+    width: 30px;
+    height: 30px;
+    /*border: .5px dashed black;*/
+    text-align: center;
+    cursor: pointer;
+
+}
+.footer__menu-meCircle{
+width: 28px;
+height: 23.45px;
+border: 2px solid #EF5DA8;
+border-radius: 50%;
+margin: 0 auto;
+
+}
+.footer__menu-me{
+
 }
