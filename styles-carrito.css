@@ -25,18 +25,25 @@ section{
     display: flex;
     flex-direction: column;
     
+    
 }
 .article__productos{
-    height:350;
+    height: 1000px;
     display: flex;
     flex-direction: column;
-    height: 350px;
-    border-bottom: 2px dashed #EF5DA8;
+    
+    
     padding: 10px;
 }
 .article__boleta{
+    border-top: 2px dashed #EF5DA8;
     position: fixed;
+    bottom: 0;
     z-index: 40;
+    height: 283px;
+    background-color: #fff;
+    width: 100%;
+    padding: 10px;
 }
 /*-------------TOP INVITADO Y BOTONES ------*/
 .top{
@@ -155,4 +162,65 @@ text-align: center;
     position: absolute;
     right: 0;
 
+}
+
+/*-------BOLETA-------------------*/
+
+.article__boleta-uno{
+
+}
+.article__boleta-uno p{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+
+}
+.article__boleta-dos{
+    margin-top: 10px;
+
+}
+.article__boleta-dos input[type=text]{
+    width: 60%;
+    height: 30px;
+    background: rgba(118, 118, 128, 0.12);
+    border-radius: 98px;
+    border: none;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+
+}
+.article__boleta-dos input[type=button]{
+    width: 30%;
+    margin-left: 10px;
+    height: 30px;
+    background: rgba(118, 118, 128, 0.12);
+    border-radius: 98px;
+    border: none;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+    background-color: #EF5DA8;
+}
+.article__boleta-dos input:focus{
+    outline: transparent;
+}
+.article__boleta-tres{
+    height: 68px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+}
+.tres__misCompras{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 14px;
+
+}
+.tres__misCompras p{
+    margin-left: 30px;
 }
