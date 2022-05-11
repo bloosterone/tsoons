@@ -1,0 +1,158 @@
+*{
+    font-family: Varela;
+    
+    
+}
+body{
+    display: flex;
+    flex-direction: column;
+     min-width: 330px;
+}
+
+header{
+    
+  
+     height: 110px;
+    display: flex;
+    flex-direction: column;
+   border-bottom: 2px solid #EF5DA8 ;
+    background-color: white;
+   
+    align-content: center;
+    
+}
+section{ 
+    display: flex;
+    flex-direction: column;
+    
+}
+.article__productos{
+    height:350;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    border-bottom: 2px dashed #EF5DA8;
+    padding: 10px;
+}
+.article__boleta{
+    position: fixed;
+    z-index: 40;
+}
+/*-------------TOP INVITADO Y BOTONES ------*/
+.top{
+    width: 100%;
+/*    border: 1px solid red;
+*/    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.top__iconLeft{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+  left: 20px;
+}
+.top__guess{
+/*border: 0.5px solid black;
+*/
+height: 30px;
+width: 120px;
+font-weight: 600;
+font-size: 15px;
+text-align: center;
+
+}
+.top__guess i{
+    margin-left: 10px;
+    transform: rotate(180deg);
+}
+.top__iconPlus{
+/*    border: 0.5px solid black;
+*/   width: 20px;
+    height: 20px;
+    position: absolute;
+    left: calc(100% - 40px);
+}
+.top__iconPlus img{
+   
+    cursor: pointer;
+}
+
+.top__second{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+.top__second-title{
+    font-size: 12px;
+
+}
+.top__second-iconShop{
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+}
+/*-------------LISTA PRODUCTOS----*/
+
+.section__article-producto{
+    height: 92px;
+    border: .5px solid green;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+.producto__circle{
+    width: 80px;
+    height: 77px;
+    border-radius: 50%;
+    border: 1.5px solid #EF5DA8;
+}
+.producto__info{
+    border: .5px dashed black;
+    margin: 10px 0 0 10px;
+
+}
+.info-p{
+     border: .5px dashed red;
+    width:120px;
+    height: 20px;
+}
+.producto__info-title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+}
+.info-rosa p{
+    color: #F178B6;
+    font-size: 14px;
+}
+.producto__cantidad{
+    border: .5px dashed black;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    height: 60px;
+    position: absolute;
+    right:20px;
+    width: 80px;
+
+}
+.producto__cantidad-total{
+    color: #BE04FF;
+    align-self: flex-end;
+}
+.producto__cantidad-restar{
+    position: absolute;
+    right: 0;
+
+}

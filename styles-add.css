@@ -56,7 +56,7 @@ footer{
     justify-content: center;
 }
 .top__icon-camera{
-    border: .5px dashed black;
+   
     width: 40px;
     margin-left: 25px;
     display: flex;
@@ -70,7 +70,7 @@ footer{
 }
 .top__search{
     width: 60%;
-    border: .5px dashed black;
+    
     margin: 0 auto;
     background: rgba(118, 118, 128, 0.12);
     border-radius: 98px;
@@ -147,12 +147,11 @@ footer{
     grid-template-columns: repeat(3, minmax(100px,1fr));
      max-width: 975px;
     height: auto;
-    
     grid-auto-rows: 1fr;
     grid-auto-columns: 1fr;
     border-radius: 20px;
     grid-auto-flow: dense;
-    
+    overflow: hidden;
 }
 .article__grid-img{
 /*    border: .5px solid black;
@@ -162,7 +161,7 @@ footer{
    margin-left:5px ;
    margin-right: 5px;
     min-width: 100px;
-   
+   cursor: pointer;
     
     min-height: 100px;
     margin-top: .5px;
@@ -218,8 +217,11 @@ transform:  scale(1.04);
     height: 30px;
     /*border: .5px dashed black;*/
     text-align: center;
-    cursor: pointer;
+    
 
+}
+.foot img{
+    cursor: pointer;
 }
 .footer__menu-meCircle{
 width: 28px;
