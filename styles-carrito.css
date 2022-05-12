@@ -154,12 +154,24 @@ text-align: center;
     height: 60px;
     position: absolute;
     right:20px;
-    width: 80px;
+    width: 100px;
 
 }
+
 .producto__cantidad-total{
     color: #BE04FF;
     align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+}
+.precio{
+margin-left: 10px;
+font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: #EF5DA8;
+
+
 }
 .producto__cantidad-restar{
     position: absolute;
