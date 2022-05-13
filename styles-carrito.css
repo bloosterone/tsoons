@@ -207,6 +207,7 @@ font-weight: 600;
 
 }
 .article__boleta-dos input[type=button]{
+    cursor: pointer;
     width: 30%;
     margin-left: 10px;
     height: 30px;
@@ -254,6 +255,7 @@ font-weight: 600;
 }
 
 .article__boleta-cinco input{
+    cursor: pointer;
     width: 40%;
     margin-left: 10px;
     height: 35px;
