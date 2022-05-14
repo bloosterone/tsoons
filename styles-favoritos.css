@@ -29,7 +29,14 @@ article{
     
     
 }
+footer{
+    
+    width: 100%;
+    border-top: .5px solid grey;
 
+    display: flex;
+    min-width: 343px;
+}
 /*---------HEADER---------*/
 .top{
     width: 100%;
