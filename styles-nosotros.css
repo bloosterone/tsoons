@@ -96,6 +96,7 @@ fieldset{
     border: 1px solid #EF5DA8;
     display: flex;
     padding: 10px;
+    margin-top: 10px;
     flex-direction: column;
 }
 fieldset legend{
