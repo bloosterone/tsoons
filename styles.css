@@ -52,6 +52,14 @@ font-size: 15px;
 text-align: center;
 
 }
+.top__guess a:link{
+text-decoration: none;
+color: black;
+}
+.top__guess a:visited{
+color: black;
+}
+
 .top__guess i{
     margin-left: 10px;
     transform: rotate(180deg);

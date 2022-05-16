@@ -143,9 +143,7 @@ fieldset{
     margin-top: 10px;
     flex-direction: column;
 }
-fieldset legend{
-color:#EF5DA8 ;
-}
+
 .chat__uno{
     display: flex;
     flex-direction: row;
@@ -234,6 +232,7 @@ fieldset legend{
   font-weight: bold;
   text-align: center;
   padding: 5px 10px;
+  color:#EF5DA8 ;
 
 }
 /*--------------- NUMERO 6 (FOOTER MENU IG)-----------*/

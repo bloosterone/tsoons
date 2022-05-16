@@ -1,0 +1,145 @@
+*{
+    font-family: Varela;
+    
+    
+}
+body{
+    display: flex;
+    flex-direction: column;
+     min-width: 360px;
+     position: relative;
+     height: 100vh;
+}
+header{
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+article{
+   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    width: 100%;
+   
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+
+}
+/*-------------header---*/
+.article__logotitle{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.article__logo{
+    width: 106px;
+height: 106px;
+
+background-color: #FCB3BD;
+border-radius: 50%;
+border: 1.5px solid #EF5DA8;
+}
+.article__logo img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.article__title{
+    margin-top: 10px;
+
+}
+.title{
+   
+background: conic-gradient(from 163.54deg at 48.75% 6.95%, #9F2BFB 0deg, #6DF4F4 148.13deg, #F2EBAB 238.12deg, #FF5EEF 360deg);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+font-style: normal;
+font-weight: 600;
+font-size: 26px;
+line-height: 100%;
+}
+/*------------FORM------*/
+fieldset{
+    border-radius: 16px;
+    max-width: 650px;
+    border: 1px solid #EF5DA8;
+    display: flex;
+    padding: 20px;
+    margin-top: 10px;
+    flex-direction: column;
+    height: 350px;
+    position: relative;
+    align-items: center;
+}
+fieldset legend{
+    border: 1px solid rgba(196, 196, 196, 0.6);
+    border-radius: 12px;
+    font-size: 18px;
+  font-weight: bold;
+  
+  padding: 5px 10px;
+  color:#EF5DA8 ;
+
+}
+
+input[type="text"]{
+    margin-top: 14px;
+    width: 255px;
+    height: 30px;
+    background: rgba(118, 118, 128, 0.12);
+    border-radius: 98px;
+    border: none;
+    text-align: center;
+    }
+    .registrarse{
+    margin-top: 14px;
+    width: 135px;
+    height: 40px;
+    background: #EF5DA8;
+    font-weight: bold;
+    border-radius: 98px;
+    color: white;
+    border: none;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    }
+    /*---------FOOTER--------*/
+    .footer__contenedor{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .contenedor__texto{
+        font-weight: bold;
+    }
+    .ingresar{
+        background: #BE04FF;
+    font-weight: bold;
+    border-radius: 98px;
+    color: white;
+    border: none;
+    height: 30px;
+    width: 100px;
+    }
