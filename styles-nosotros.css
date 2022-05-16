@@ -70,7 +70,7 @@ border: 1.5px solid #EF5DA8;
 
 }
 .title{
-  border: .5px solid red; 
+   
 background: conic-gradient(from 163.54deg at 48.75% 6.95%, #9F2BFB 0deg, #6DF4F4 148.13deg, #F2EBAB 238.12deg, #FF5EEF 360deg);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
@@ -222,11 +222,10 @@ border-radius: 50%;
     z-index: 0;  
 }
 .chat__chat p>a img{
- width: 120px;
+ width: 50px;
+ height: 50px;
 }
-.aig{
-    height: 42px;
-}
+
 
 fieldset legend{
     border: 1px solid rgba(196, 196, 196, 0.6);
