@@ -159,7 +159,7 @@
                 </div>
                  <!---- BOTONES----->
                 <div class="puntos">
-                        <div class="punto izq"><i class="fa-solid fa-angle-left"></i></div>
+                        <div class="punto izq selecionado"><i class="fa-solid fa-angle-left"></i></div>
                         <div class="punto der"><i class="fa-solid fa-angle-left"></i></div>
                     </div>
             </div>
@@ -218,67 +218,5 @@
 
     
 </body>
-<script>
-    
-const grande = document.querySelector('.menu__contenedor-grande');
-const puntos = document.querySelectorAll('.punto');
-
-console.log(grande, puntos);
-       let contador=0;
-       console.log("contador fuera: "+contador)
-              
-                      
-            puntos[0].addEventListener('click', ()=>{
-                if(contador<=0){
-                    contador=contador+33;
-                console.log(contador);
-
-                    if(contador== 33){
-                        contador=-66;
-                        grande.style.transform=` translateX(${contador}%)`;
-                    }
-                grande.style.transform=` translateX(${contador}%)`;
-                }
-                
-            });
-            puntos[1].addEventListener('click', ()=>{
-                console.log(contador);
-                if(contador>= -66){
-                    contador= contador-33;
-                    console.log(contador);
-                    if(contador== -99){
-                        contador=0;
-                        grande.style.transform=` translateX(${contador}%)`;
-                    }
-                    grande.style.transform=` translateX(${contador}%)`;
-                  
-                 
-                }
-                else{
-                    contador=0;
-                   console.log(contador);
-                   grande.style.transform=` translateX(${contador}%)`;
-                }
-
-                
-            });
-
-
-            
-                
-                
-                
-                
-
-           
-                
-    
-
-            
-    
-
-        
-
-
-</script>
+<script src="carrousel.js"></script>
 </html>

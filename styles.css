@@ -352,18 +352,17 @@ position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
    
 
 }
-.der{
+.seleccionado{
      background-color: #EF5DA8;
      color: white;
-    transform: rotate(180deg);
-    
-    
-
-
 }
+.der{
+    transform: rotate(180deg);
+    }
 .Circle{
     width: 70px;
     height: 70px;
