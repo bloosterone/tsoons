@@ -251,12 +251,14 @@ line-height: 17px;
 /*    border: 0.5px solid red;
 */    width: calc(100% - 5px);
     height: auto;
-    margin-left: 5px;
+    
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+     position: relative;
+     left: 0;
 
 }
 .top__third-button button{
@@ -279,23 +281,42 @@ position: relative;
     margin-left: 10px;
     transform: rotate(180deg);
 }
-.top__menu{
+.top__menu-contenedor{
 /*    border: 1px solid green;
 */    flex-grow: 1;
+    margin-top: 10px;
+    width: calc(100% - 10px);
+    overflow: hidden;
+    align-items: center;
+   
 
-    width: calc(100% - 5px);
+}
+.menu__contenedor-grande{
+    width:300%;
+    height: 100px;
+    padding: 10px 0 0 0;
+    border: 1px solid lightblue;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-   overflow-x: auto;
+    flex-flow: row nowrap;
+    transition: transform 1s ease;
 
+
+}
+.contenedor__grande-imgs{
+    width: calc(100%/3);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+
+
+    
 }
 .menu{
 
     width: 70px;
     height: 83px;
 /*    border: 0.5px dashed black;
-*/    margin-top: 15px;
+*/   
     display: flex;
     flex-direction: column;
     font-size: 12px;
@@ -303,7 +324,45 @@ position: relative;
     text-align: center;
     letter-spacing: -0.01px;
     font-weight: 600;
-    margin-left: 20px;
+
+    
+}
+
+.puntos{
+    width:100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #EF5DA8;
+
+
+}
+.puntos>div i{
+    transform: scale(1.5);
+}
+
+.punto{
+    color: #EF5DA8;
+   
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.der{
+     background-color: #EF5DA8;
+     color: white;
+    transform: rotate(180deg);
+    
+    
+
+
 }
 .Circle{
     width: 70px;

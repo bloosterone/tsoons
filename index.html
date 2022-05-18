@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/42dbfd4b42.js" crossorigin="anonymous"></script> <link href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Ubuntu:wght@300&display=swap" rel="stylesheet">   
+<script src="https://kit.fontawesome.com/42dbfd4b42.js" crossorigin="anonymous"></script> <link href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
+
 <title>Tiendita Soons</title>
 </head>
 <body>
@@ -61,42 +62,48 @@
             <div class="top__third-button">
                 <button>Soy Invitado<i class="fa-solid fa-angle-up"></i></button>
             </div>
-            <div class="top__menu">
-                <div class="top__menu-One menu">
-                    <div class="top__menu-OneCircle Circle">
-                        <img src="img/crop.jpeg">
-                    </div>
-                    <div class="top__menu-OneParraf">
+            <div class="top__menu-contenedor">
+                <!-----U N O----->
+                <div class="menu__contenedor-grande ">
+                    <div class="contenedor__grande-imgs">
+                    <div class="top__menu-One menu">
+                        <div class="top__menu-OneCircle Circle">
+                            <img src="img/crop.jpeg">
+                        </div>
+                        <div class="top__menu-OneParraf">
                        <p>Crops</p> 
+                        </div>
                     </div>
-                </div>
-                <div class="top__menu-Two menu">
-                    <div class="top__menu-TwoCircle Circle">
-                        <img src="img/vestido.jpeg">
-                    </div>
-                    <div class="top__menu-TwoParraf">
-                       <p>Vestidos</p> 
-                    </div>
+                    <div class="top__menu-Two menu">
+                        <div class="top__menu-TwoCircle Circle">
+                            <img src="img/vestido.jpeg">
+                        </div>
+                        <div class="top__menu-TwoParraf">
+                            <p>Vestidos</p> 
+                        </div>
                     
-                </div>
-                <div class="top__menu-Three menu">
-                    <div class="top__menu-ThreeCircle Circle">
+                    </div>
+                    <div class="top__menu-Three menu">
+                        <div class="top__menu-ThreeCircle Circle">
                         <img src="img/pantalon.jpeg">
-                    </div>
-                    <div class="top__menu-ThreeParraf">
-                      <p>Pantalones</p>  
-                    </div>
+                        </div>
+                        <div class="top__menu-ThreeParraf">
+                            <p>Pantalones</p>  
+                        </div>
                     
-                </div>
-                <div class="top__menu-Four menu">
-                    <div class="top__menu-FourCircle Circle">
+                    </div>
+                    <div class="top__menu-Four menu">
+                        <div class="top__menu-FourCircle Circle">
                         <img src="img/beatle.jpeg">
-                    </div>
-                    <div class="top__menu-FourParraf">
+                        </div>
+                        <div class="top__menu-FourParraf">
                         <p>Beatles</p>
-                    </div>
+                        </div>
                     
-                </div>
+                    </div>
+                  </div>
+                <!-----D O S----->
+              <div class="contenedor__grande-imgs">
                 <div class="top__menu-Five menu">
                     <div class="top__menu-FourCircle Circle">
                         <img src="img/body.jpeg">
@@ -124,24 +131,37 @@
                     </div>
                     
                 </div>
-                <div class="top__menu-Four menu">
+                <div class="top__menu-Eight menu">
                     <div class="top__menu-FourCircle Circle">
                         <img src="img/falda.jpeg">
                     </div>
                     <div class="top__menu-FourParraf">
                         <p>Faldas</p>
                     </div>
+                </div>    
+              </div>
+              <div class="contenedor__grande-imgs">     
+               
+                <!----- T R E S ---------> 
+                
+                    <div class="top__menu-Nine menu">
+                        <div class="top__menu-FourCircle Circle">
+                            <img src="img/conjunto.jpeg">
+                        </div>
+                        <div class="top__menu-FourParraf">
+                            <p>Conjunto</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                   
                     
                 </div>
-                <div class="top__menu-Four menu">
-                    <div class="top__menu-FourCircle Circle">
-                        <img src="img/conjunto.jpeg">
+                 <!---- BOTONES----->
+                <div class="puntos">
+                        <div class="punto izq"><i class="fa-solid fa-angle-left"></i></div>
+                        <div class="punto der"><i class="fa-solid fa-angle-left"></i></div>
                     </div>
-                    <div class="top__menu-FourParraf">
-                        <p>Conjunto</p>
-                    </div>
-                    
-                </div>
             </div>
         </div>
     </header>
@@ -198,4 +218,67 @@
 
     
 </body>
+<script>
+    
+const grande = document.querySelector('.menu__contenedor-grande');
+const puntos = document.querySelectorAll('.punto');
+
+console.log(grande, puntos);
+       let contador=0;
+       console.log("contador fuera: "+contador)
+              
+                      
+            puntos[0].addEventListener('click', ()=>{
+                if(contador<=0){
+                    contador=contador+33;
+                console.log(contador);
+
+                    if(contador== 33){
+                        contador=-66;
+                        grande.style.transform=` translateX(${contador}%)`;
+                    }
+                grande.style.transform=` translateX(${contador}%)`;
+                }
+                
+            });
+            puntos[1].addEventListener('click', ()=>{
+                console.log(contador);
+                if(contador>= -66){
+                    contador= contador-33;
+                    console.log(contador);
+                    if(contador== -99){
+                        contador=0;
+                        grande.style.transform=` translateX(${contador}%)`;
+                    }
+                    grande.style.transform=` translateX(${contador}%)`;
+                  
+                 
+                }
+                else{
+                    contador=0;
+                   console.log(contador);
+                   grande.style.transform=` translateX(${contador}%)`;
+                }
+
+                
+            });
+
+
+            
+                
+                
+                
+                
+
+           
+                
+    
+
+            
+    
+
+        
+
+
+</script>
 </html>
