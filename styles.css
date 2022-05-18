@@ -295,7 +295,7 @@ position: relative;
     width:300%;
     height: 100px;
     padding: 10px 0 0 0;
-    border: 1px solid lightblue;
+    
     display: flex;
     flex-flow: row nowrap;
     transition: transform 1s ease;
