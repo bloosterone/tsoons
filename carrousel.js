@@ -53,3 +53,33 @@ console.log(grande, puntos);
 
                 
             });
+
+
+            const resultados = document.querySelector('.buscar');
+            const busqueda =document.getElementById('btn_buscar');
+            const menu = document.querySelector('.footer__menu');
+
+            
+             
+          
+            console.log(resultados);
+            resultados.remove();
+           
+
+            busqueda.addEventListener('click', ()=>{
+            
+                  menu.appendChild(resultados);
+
+                  
+                
+
+                  
+                });
+           
+
+
+                  
+                  
+            
+            
+           
