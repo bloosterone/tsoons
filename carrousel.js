@@ -58,22 +58,44 @@ console.log(grande, puntos);
             const resultados = document.querySelector('.buscar');
             const busqueda =document.getElementById('btn_buscar');
             const menu = document.querySelector('.footer__menu');
-
+            const mask = document.querySelector('.prueba');
+             const cerrar = document.querySelector('.cerrar__resultados');
             
              
-          
-            console.log(resultados);
-            resultados.remove();
            
-
-            busqueda.addEventListener('click', ()=>{
+            console.log(resultados);
             
-                  menu.appendChild(resultados);
-
-                  
+                       resultados.style.bottom='-370px'; 
+                let sacar=0;
+            busqueda.addEventListener('click', ()=>{
+                sacar=1;
+                  console.log("Dentro de busqueda"+sacar);
+             resultados.style.bottom='1px';
                 
+                  mask.addEventListener('click',()=>{
 
-                  
+                        sacar=0;
+                        console.log("Dentro de mask"+sacar);
+                        if(sacar==0){
+                            console.log("dentro del if"+sacar);
+                 resultados.style.bottom='-370px'; 
+                      
+                        }
+                        
+                    });
+                  cerrar.addEventListener('click',()=>{
+
+                        sacar=0;
+                        console.log("Dentro de cerrar"+sacar);
+                        if(sacar==0){
+                            console.log("dentro del if de cerrar"+sacar);
+                 resultados.style.bottom='-370px'; 
+                      
+                        }
+                        
+                    });
+
+
                 });
            
 
