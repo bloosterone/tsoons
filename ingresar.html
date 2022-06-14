@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google" content="notranslate">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles-ingresar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/42dbfd4b42.js" crossorigin="anonymous"></script> <link href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
+	<title>Ingresar</title>
+
+</head>
+<body>
+    <header>
+        <div class="article__logotitle">
+            <div class="article__logo">
+                <img src="img/logotsoons.png">
+            </div>
+            <div class="article__title">
+                
+                <p class="title">Tiendita Soons</p>
+                
+            </div>
+        </div>
+    </header>
+    <article>
+        <form>
+            <fieldset class="field">
+                <legend>Ingresa</legend>
+                <input type="text" name="nombre" placeholder="Correo">
+                <input class="validar" type="password" name="nombre" placeholder="Contraseña">
+                <span ><i class="fa-solid fa-eye mostrar__contraseña"></i></span>
+                  <span><i class="fa-solid fa-eye-slash mostrar__contraseña ocultar"></i></span>
+                <span><p><a href="">Olvidaste tu contraseña?</a></p></span>
+                
+                <input type="button" name="registrarse" value="Ingresar" class="ingresar">
+
+            </fieldset>
+        </form>
+    </article>
+    <footer>
+        <div class="footer__contenedor">
+            <div class="contenedor__texto">
+                <p>No tienes una cuenta?</p>
+            </div>
+            <div class="contenedor__boton">
+                <input type="button" name="ingresar" value="Registrarse" class="registrarse">
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+  
+     const tipo = document.querySelector('.mostrar__contraseña');
+      const field = document.querySelector('.field');
+     const validar = document.querySelector('.validar');
+     const ocultar = document.querySelector('.ocultar');
+     console.log(tipo)
+     ocultar.remove();
+
+     tipo.addEventListener('click',()=>{
+        if(validar.type == "password"){
+            console.log("llega al if");
+          validar.type = "text";
+          tipo.remove();
+         field.appendChild(ocultar);
+      }
+      ocultar.addEventListener('click', ()=>{
+        console.log("llega al else");
+          validar.type = "password";
+            ocultar.remove();
+         field.appendChild(tipo);
+      }) 
+     });
+      
+  
+</script>
+</html>
