@@ -142,4 +142,5 @@ input[type="text"]{
     border: none;
     height: 30px;
     width: 100px;
+    cursor: pointer;
     }
