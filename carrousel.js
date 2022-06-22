@@ -118,7 +118,11 @@ console.log(grande, puntos);
                         btnRegistrarse.addEventListener('click',()=>{
                             location.href="registrarse.html";
                             });
-
+                            mask.addEventListener('click',()=>{
+                             console.log("esta haciendo click en la mascara");   
+                            cajaInvitado.style.top='-220px';
+                        
+                            });
                             cerrarInvitado.addEventListener('click',()=>{
                                     cajaInvitado.style.top='-220px';
                             });
