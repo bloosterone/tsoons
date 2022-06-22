@@ -54,7 +54,7 @@ console.log(grande, puntos);
                 
             });
 
-
+            // CUADRO DE BUSQUEDA Y BOTON
             const resultados = document.querySelector('.buscar');
             const busqueda =document.getElementById('btn_buscar');
             const menu = document.querySelector('.footer__menu');
@@ -98,6 +98,32 @@ console.log(grande, puntos);
 
                 });
            
+// INGRESAR (VISITA)
+
+
+                const btnInvitado =document.querySelector('.invi');
+                const cerrarInvitado =document.querySelector('.cerrar__invitado');
+                const cajaInvitado =document.querySelector('.invitado');
+
+                const btnIngresar = document.querySelector('.ingresar');
+                const btnRegistrarse = document.querySelector('.registrarse');
+
+
+                btnInvitado.addEventListener('click',()=>{
+                        cajaInvitado.style.top='5px';
+
+                        btnIngresar.addEventListener('click',()=>{
+                            location.href="ingresar.html";
+                            });
+                        btnRegistrarse.addEventListener('click',()=>{
+                            location.href="registrarse.html";
+                            });
+
+                            cerrarInvitado.addEventListener('click',()=>{
+                                    cajaInvitado.style.top='-220px';
+                            });
+
+                });
 
 
                   
